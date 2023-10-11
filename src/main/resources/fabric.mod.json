@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "websocket-base",
+  "version": "${version}",
+  "name": "websocket-base",
+  "description": "Base mod (addons coming soon)",
+  "authors": [
+    "PhoenixOrigin"
+  ],
+  "contact": {
+    "website": "https://phoenix.is-a.dev",
+    "repo": "https://github.com/PhoenixOrigin/websocket-base"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/websocket-base/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.phoenix.websocketclient.client.Websocket_clientClient"
+    ],
+    "main": [
+      "net.phoenix.websocketclient.Websocket_client"
+    ]
+  },
+  "mixins": [
+    "websocket-base.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
